@@ -1,0 +1,173 @@
+:root {
+    --primary-bg-color: white;
+    --secondary-bg-color: #f5efef;
+    --primary-color : #061D74;
+    --secondary-color : #0C3AE8;
+}
+
+/*Altera o padding do body*/
+.block-container.css-z5fcl4.egzxvld4 {
+    padding-top: 0px;
+    padding-left: 0%;
+    padding-right: 0%;
+}
+
+/*Estiliza os botões do streamlit*/
+.stButton > button {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--primary-bg-color);
+    flex-shrink: unset !important;
+    position: relative;
+    z-index: 1;
+    overflow-x: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2), 0px 2px 8px rgba(0, 0, 0, 0.08);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.stButton > button:after {
+    width: 100%;
+    background-color: var(--primary-color);
+    color: var(--primary-bg-color);
+    flex-shrink: unset !important;
+    position: relative;
+    z-index: 1;
+    overflow-x: hidden;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2), 0px 2px 8px rgba(0, 0, 0, 0.08);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    width: 0;
+    height: 0;
+    background-color: black;
+    border-radius: 50%;
+    opacity: 0.2;
+}
+
+.stButton > button:hover {
+    width: 100%;
+    background-color: var(--secondary-color);
+    color: var(--primary-bg-color);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2), 0px 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.stButton > button:hover:after {
+    transform: translate(-50%, -50%) scale(2);
+    opacity: 0;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+
+/*Estiliza o Forms */
+[data-testid="stForm"] {
+    background-color: var(--primary-bg-color);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2), 0px 2px 8px rgba(0, 0, 0, 0.08);
+    border-radius: 0.6rem;
+}
+
+/*Oculta o hamburguer menu*/
+#MainMenu {
+    visibility: hidden;
+}
+
+/*Oculta o expansivel de imagens*/
+button[title="View fullscreen"] {
+    visibility: hidden;
+}
+
+/*Alinha os items do menu*/
+.css-ocqkz7 {
+    align-items: center;
+}
+
+/*Estiliza o botão de sair*/
+.btn-primary.my-btn {
+    color: black;
+    background-color: transparent;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0px;
+    margin-bottom: 24px;
+}
+
+.btn.btn-primary.my-btn:hover {
+    color: black;
+    background-color: lightgray;
+    font-weight: bold;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 0px;
+    margin-bottom: 24px;
+}
+
+/*Estiliza o modal*/
+.modal-dialog > div {
+    margin-top: -320px;
+    border-radius: 1.5rem;
+    box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.15), 0px 8px 36px rgba(0, 0, 0, 0.08);
+    border: 0px;
+}
+
+[data-testid="stVerticalBlock"] {
+    gap: 0rem;
+}
+
+[data-testid="stStatusWidget"] {
+    visibility: hidden;
+    height: 0%;
+    position: fixed;
+}
+
+header {
+visibility: hidden;
+height: 0%;
+}
+
+footer {
+    padding-left: 10px;
+    visibility: visible;
+    height: 26px;
+    background-color: gray;
+    color: gray;
+}
+
+footer:after {
+    color: white;
+    content: 'Template';
+    font-size: 12px;
+    }
+
+/*Retira o Made with Streamlit*/
+.css-17es36v {
+    color: gray;
+    font-size: 0px;
+}
+.css-17es36v a {
+    color: gray;
+    font-size: 0px;
+}
+
+/*Estiliza os botões HTML*/
+.btn-primary {
+    background-color: #363636;
+    border: 0px;
+}
+
+.btn-primary:hover {
+    background-color: blue;
+    border: 0px;
+}
+
+.btn-secondary {
+    background-color: gray;
+    border: 0px;
+}
+
+.btn-secondary:hover {
+    background-color: red;
+    border: 0px;
+}
+
